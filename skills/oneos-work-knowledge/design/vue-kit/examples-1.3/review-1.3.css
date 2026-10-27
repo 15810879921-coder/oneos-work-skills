@@ -1,0 +1,74 @@
+/* Review-only: loaded by the isolated 5670 design lab, never by the business app. */
+.lab-inspector .lab-revision-control .ant-select { width: 138px; }
+.lab-query-actions { display: flex; align-items: center; gap: 8px; }
+.lab-review .lab-main { height: 100dvh; min-height: 0; display: flex; flex-direction: column; }
+.lab-review .lab-topbar, .lab-review .lab-inspector { flex-shrink: 0; }
+.lab-review .lab-main > main { flex: 1; min-height: 0; overflow: auto; }
+/* Page chrome fills the workspace; only the readable body has a width limit. */
+.lab-review :is(.oneos-page--form, .oneos-page--detail) { min-height: 100%; }
+.lab-review :is(.oneos-page--form, .oneos-page--detail) > .oneos-page__measure { width: 100%; max-width: none; margin-inline: 0; }
+.lab-review :is(.oneos-page--form, .oneos-page--detail) > .oneos-page__measure > .oneos-page__content { width: 100%; max-width: 1240px; margin-inline: auto; }
+.lab-review :is(.oneos-page--form, .oneos-page--detail) > .oneos-page__footer > .oneos-page__footer-inner { width: 100%; max-width: none; }
+@media (max-width: 767px) {
+  .lab-review :is(.oneos-page--form, .oneos-page--detail) { padding: 16px 12px; }
+  .lab-review :is(.oneos-page--form, .oneos-page--detail) > .oneos-page__footer { margin-inline: -12px; margin-bottom: -16px; padding-inline: 12px; }
+}
+.lab-review .lab-ledger-review { height: 100%; min-height: 540px; padding: 12px 24px; }
+.lab-review .lab-ledger-review .oneos-page__measure { height: 100%; display: flex; flex-direction: column; gap: 12px; }
+.lab-review .lab-ledger-review .oneos-page__summary { margin: 0; flex-shrink: 0; }
+.lab-review .lab-ledger-review .oneos-page__content { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.lab-review .lab-metrics { padding: 0; min-height: 78px; overflow: hidden; }
+.lab-review .lab-metrics button { position: relative; padding: 10px 18px 12px; }
+.lab-review .lab-metrics button[aria-pressed="true"] { background: color-mix(in srgb, var(--oneos-primary) 4%, var(--oneos-surface)); }
+.lab-review .lab-metrics button[aria-pressed="true"]::after { content: ''; position: absolute; height: 2px; bottom: 0; left: 18px; right: 18px; background: var(--oneos-primary); }
+.lab-review .lab-metric-label { line-height: 20px; }
+.lab-review .lab-metric-value { display: flex; align-items: baseline; gap: 6px; font-size: 24px; line-height: 30px; margin: 4px 0 0; }
+.lab-review .lab-metric-value small { margin-left: 0; }
+.lab-review .lab-ledger-card { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.lab-review .lab-ledger-card .oneos-toolbar { flex-shrink: 0; padding: 12px 16px; gap: 8px 12px; border-bottom: 1px solid var(--oneos-line-soft); }
+.lab-review .lab-ledger-card .oneos-toolbar__fields { flex: 1 1 490px; gap: 8px; }
+.lab-review .lab-ledger-card .oneos-toolbar__actions { margin-left: auto; gap: 8px; flex-wrap: nowrap; }
+.lab-review .lab-ledger-review .oneos-toolbar { background: var(--oneos-fill); }
+.lab-review .lab-ledger-actions { display: flex; flex-shrink: 0; align-items: center; justify-content: flex-end; gap: 8px; padding: 8px 16px; border-bottom: 1px solid var(--oneos-line-soft); }
+.oneos-surface .lab-ledger-review .lab-ledger-actions .lab-icon-button.ant-btn:not(.ant-btn-sm) { width: 36px; min-width: 36px; padding-inline: 0; }
+.oneos-surface .lab-review .lab-icon-button.ant-btn:not(.ant-btn-sm) { width: 36px; min-width: 36px; padding-inline: 0; }
+.lab-review .lab-search { min-width: 170px; flex: 1 1 220px; }
+.lab-review .lab-filter { width: 120px; }
+.lab-action-divider { width: 1px; height: 20px; margin-inline: 2px; background: var(--oneos-line); }
+.lab-review .lab-grid-wrap { flex: 1; min-height: 0; overflow: hidden; }
+.lab-code-text { display: inline-block; font-size: 12px; line-height: 1.65; color: var(--oneos-primary-ink); }
+.lab-review .lab-pagination { flex-shrink: 0; padding: 6px 16px; }
+.lab-review .lab-table-message { flex: 1; height: auto; min-height: 260px; }
+@media (max-width: 1100px) {
+  .lab-review .lab-ledger-card .oneos-toolbar__fields { flex-basis: 100%; }
+  .lab-review .lab-inspector-status { max-width: 145px; }
+}
+@media (max-width: 760px) {
+  .lab-review .lab-main { height: auto; min-height: 100dvh; }
+  .lab-review .lab-main > main { overflow: visible; }
+  .lab-review .lab-ledger-review { height: 780px; min-height: 780px; padding: 12px; }
+  .lab-review .lab-metrics { min-height: 0; }
+  .lab-review .lab-metrics button { padding: 8px 14px 10px; }
+  .lab-review .lab-metrics button[aria-pressed="true"]::after { left: 14px; right: 14px; }
+  .lab-review .lab-ledger-card .oneos-toolbar { padding: 12px; }
+  .lab-review .lab-ledger-card .oneos-toolbar__actions { flex-wrap: wrap; }
+  .lab-review .lab-ledger-actions { padding-inline: 12px; }
+  .oneos-surface .lab-ledger-review .lab-ledger-actions .lab-icon-button.ant-btn:not(.ant-btn-sm) { width: 44px; min-width: 44px; }
+  .oneos-surface .lab-review .lab-icon-button.ant-btn:not(.ant-btn-sm) { width: 44px; min-width: 44px; }
+  .lab-review .lab-action-divider { display: none; }
+  .lab-inspector-controls { flex-wrap: wrap; justify-content: flex-end; }
+  .lab-review .lab-search { flex-basis: 100%; min-width: 0; }
+}
+
+/* Shared detail standard: ordinary records use reading width; contracts use the wide variant. */
+.lab-review .nl-detail.nl-detail--business > .oneos-page__measure > .oneos-page__content { max-width: none; }
+.lab-review .oneos-page--detail .oneos-section__header { min-height: 54px; padding: 16px 22px; }
+.lab-review .oneos-page--detail .oneos-section__body { padding: 22px; }
+.lab-review .oneos-page--detail .oneos-page__content { gap: 20px; }
+.lab-review .nl-detail-tag { min-height: 24px; padding: 1px 8px; border-radius: 4px; background: color-mix(in srgb, currentColor 10%, var(--oneos-surface)); font-size: 13px; font-weight: 500; line-height: 22px; }
+.lab-review .nl-detail-tag i { display: none; }
+.lab-review .nl-audit { margin: 0; padding-top: 16px; border-top: 1px solid var(--oneos-line-soft); gap: 8px 32px; line-height: 20px; }
+@media (max-width: 767px) {
+  .lab-review .oneos-page--detail :is(.oneos-section__header, .oneos-section__body) { padding: 16px; }
+  .lab-review .nl-audit { flex-direction: column; }
+}

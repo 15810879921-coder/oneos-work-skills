@@ -1,0 +1,27 @@
+# 双库与低消耗读取
+
+正式来源：业务 oneos-business-knowledge；工程 oneos-development-knowledge，组织 697c54a19df7fdfa65466405，均为 Codeup main。先固定两个远端提交，再在该提交读取根 kb-index.json、适用索引、正文和 hash。索引会过期、混有 pending 和历史，标题相似不是正式关联。
+
+## 读路径
+用授权连接器或 `scripts/kb.py pin --source business` 固定 SHA，development 同理；pin 用 git ls-remote，仅查远端，不克隆。连接器可替代 pin，但保留真实返回。
+
+`python3 scripts/kb.py search --source business --commit SHA --query 续保 --limit 5`
+`python3 scripts/kb.py read --source business --commit SHA --path 命中路径 --sha256 命中完整哈希`
+
+默认 API 凭据取 ONEOS_CODEUP_TOKEN，缓存位于 XDG_CACHE_HOME/oneos-work/kb（未设置则 ~/.cache），上限32MiB；支持 --cache-mb。已有本地仓用 --repo 明确指向，固定提交从 Git 对象读取，不读未提交正文，不自动 clone/fetch。工具只读知识、写自己的缓存。
+
+索引由程序筛选，默认最多5条、按文件去重，保留来源状态。readerBytes 是本次脚本读取字节（含缓存），不是网络或模型 token。读正文默认12000字符上限，超限明确拒绝输出，选择完整相关章节/例外用 --lines 或主动扩大预算；partial=true 时必须核对跨章节依赖，不能仅凭片段下完整结论。未命中扩大别名/模块/依赖并查目录，不把0命中当成没有约束；不把整库直接灌给模型。
+
+## 权威与关联
+- frozen/confirmed 只在对应版本、适用范围且 SHA 相符时作为业务依据；关联 PRD 不继承模块卡的 confirmed。
+- 技术来源记录 snapshot/engineering_document/historical、代码仓提交和文件指纹。locator_only/content_checked/runtime_verified 分开；截图成功不提升技术验证状态。
+- 代码 root/path 常在另一仓，开发知识库未必含正文。经来源映射取得仓库+提交+路径，核哈希；历史未提交快照无法从远端复建就写不可得，不用本机任意最新版替代。
+- 开发前五类工程资产按库中 manifest 原规则读取完整正文；新包不更改共享知识库的强制政策。设计规范按 design.md。
+- 规则引用、实现关联与执行证据分别维护。模板 templates/knowledge-link.json；测试版本变化仅重评受影响关系，不能无条件沿用或全部清空历史。
+
+## 写回
+先查重和权限，展示实际净变化，在用户已授权范围内写到对应云端库/分支/MR；提交、远端读回和索引抽检齐全才报已入库。没有写权限时交付可审阅变更，不虚报同步。
+
+你的明确业务决定可形成 confirmed 并保留来源；AI总结/经验默认 candidate，不能自行改业务规则或执行授权。设计决定归体验规范；技术现状以真实证据维护。规则变更同批更新索引、哈希和关联，跨库提交不是原子事务：保存两个版本和同步状态，半成功时只恢复剩余部分。
+
+只同步任务净变化，原始视频/日志存云端附件或制品，库中留证据引用；不复制全部聊天和构建产物。来源归档、过期和替代显式记录，不删历史失败。新体系无自动远端写入器；现有官方工具负责实际同步。

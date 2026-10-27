@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "oneos-work/run-v1",
+  "runId": null,
+  "revision": 0,
+  "taskRef": null,
+  "stage": "scoped",
+  "scope": [],
+  "knowledgeCommits": {},
+  "designVersion": null,
+  "commits": [],
+  "targetBranch": null,
+  "expectedComponents": {},
+  "deployedComponents": {},
+  "deploymentId": null,
+  "evidenceRefs": [],
+  "events": [],
+  "gaps": [],
+  "nextAction": null,
+  "cloudSync": "not_synced"
+}

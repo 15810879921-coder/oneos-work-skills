@@ -1,0 +1,13 @@
+# 测试记录
+- runId/resultId/执行者/职责（self_check | assisted_verification | independent_qa）：
+- AC/用例/规则与设计版本：
+- environment/deploymentId/实际组件与核验来源：
+- 账号角色/数据标识/固定测试日期：
+- Given/When/Then、期望/实际：
+- 命令或操作、开始结束时间、截图/trace/报告/接口或文件证据：
+- 结论：passed | failed | blocked | not_run
+- 首轮失败及重试记录：
+- 缺陷/根因（未知写待分析）/受影响范围：
+- 复测解决的原resultId及适用依据：
+- 尚未执行项、环境变化与风险：
+- 平台同步结果与读回：

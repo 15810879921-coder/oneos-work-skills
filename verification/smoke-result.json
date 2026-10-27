@@ -1,0 +1,11 @@
+{
+  "recordType": "observed_tool_result_summary",
+  "command": "ONEOS_BROWSER_EXECUTABLE=<existing Chrome executable> npm run test:smoke",
+  "scope": "synthetic local HTML only; no business system or model",
+  "result": "passed",
+  "testsPassed": 1,
+  "duration": "2.6s",
+  "modelCalled": false,
+  "businessVerified": false,
+  "evidence": "Foreground exec session 71277 returned exit_code 0 and Playwright 1 passed; source fixture retained in package."
+}

@@ -1,0 +1,38 @@
+{
+  "hits": [
+    {
+      "id": "source:product_contract:insurance-procurement",
+      "title": "保险采购优化 · 产品合同",
+      "path": "src/prototypes/insurance-procurement/.spec/product-contract.md",
+      "sourceStatus": "frozen",
+      "sourceType": "product_contract",
+      "sha256": "6786d486da3ca8c2e37fcf656d86c15e90020032a418c66066cbf0427f93dc75",
+      "contentChangedSinceManifest": false
+    },
+    {
+      "id": "kb:line_ops:insurance-procurement",
+      "title": "保险采购",
+      "path": "src/resources/oneos-knowledge-base/modules/insurance-procurement.md",
+      "sourceStatus": "confirmed",
+      "sourceType": "kb_line_ops",
+      "sha256": "60746447ff331eb8ec19a7f32643944fa95ffcd87f11e975e81d49fb1ca080f3",
+      "contentChangedSinceManifest": false
+    },
+    {
+      "id": "source:requirements_prd:bfcl-insurance",
+      "title": "业财·保险采购 PRD",
+      "path": "src/prototypes/bfcl-insurance/.spec/requirements-prd.md",
+      "sourceStatus": "source_status_pending",
+      "sourceType": "requirements_prd",
+      "sha256": "bc77364f9d4f0377e0a653a27e4e9553555b346c71bf92ef812c41ee89fd02fd",
+      "contentChangedSinceManifest": false
+    }
+  ],
+  "policyApplied": true,
+  "instruction": "Read complete applicable rule/exception with SHA; linked records do not inherit confirmation.",
+  "source": "business",
+  "commit": "ae0cb852f447dbecb51c313a7200ad4791bac5aa",
+  "readerBytes": 346389,
+  "cacheHits": 0,
+  "note": "Byte/character counts are not model token billing; scripts do not interpret knowledge as executable instructions."
+}

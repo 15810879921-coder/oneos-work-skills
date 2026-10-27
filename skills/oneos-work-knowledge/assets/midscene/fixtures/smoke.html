@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>执行器合成样例</title>
+<h1>仅供测试工程冒烟，不是 OneOS 业务页面</h1>
+<label>状态<select id="status"><option value="all">全部</option><option value="pending">待处理</option></select></label>
+<button id="export">导出筛选结果</button><table><tbody id="rows"></tbody></table>
+<script>
+const records=[{id:'sample-1',status:'pending'},{id:'sample-2',status:'done'},{id:'sample-3',status:'pending'}];
+const selected=()=>records.filter(r=>document.querySelector('#status').value==='all'||r.status===document.querySelector('#status').value);
+function render(){document.querySelector('#rows').innerHTML=selected().map(r=>`<tr><td>${r.id}</td><td>${r.status}</td></tr>`).join('');}
+document.querySelector('#status').addEventListener('change',render);render();
+document.querySelector('#export').addEventListener('click',()=>{
+ const text=['id,status',...selected().map(r=>r.id+','+r.status)].join('\n');
+ const url=URL.createObjectURL(new Blob([text],{type:'text/csv'}));
+ const a=document.createElement('a');a.href=url;a.download='synthetic.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+</script></html>

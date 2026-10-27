@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.*
+!.env.example
+test-results/
+midscene_run/
+playwright-report/
+storageState*.json
+auth/

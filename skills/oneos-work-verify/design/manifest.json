@@ -1,0 +1,429 @@
+{
+  "packageId": "oneos-design-system-20261027-current",
+  "design": "OneOS PC 1.3 / Runtime 1.0.6",
+  "derivedBundle": "oneos-work-1.0.0",
+  "sourceState": "Authoritative delivered working-tree snapshot; not pure Git; cloud migration not performed",
+  "scope": "Normative documents plus text-only runtime/pattern/example sources; no compiled preview, pictures, fonts, node_modules or business acceptance",
+  "files": {
+    "ONEOS-PAGE-CANON.md": {
+      "sha256": "c90055905a0c60d44a74899ed601c4d8c4286f75b7bbe67573eb219cf841bf93",
+      "sourcePath": "source/src/resources/design-system/ONEOS-PAGE-CANON.md",
+      "upstreamManifestMatched": true
+    },
+    "ONEOS-DESIGN.md": {
+      "sha256": "f42467f3870c33f1f3d9e7ad248e786d722164bec6b36e49b0145ccd24cc4cf0",
+      "sourcePath": "source/src/resources/design-system/ONEOS-DESIGN.md",
+      "upstreamManifestMatched": true
+    },
+    "PAGE-DESIGN-CONSTRAINTS.md": {
+      "sha256": "eb0ee1cbf17fb02c56ff94597e9e488cb4381b0c708e617cdaf5612dca8111a6",
+      "sourcePath": "source/src/resources/design-system/PAGE-DESIGN-CONSTRAINTS.md",
+      "upstreamManifestMatched": true
+    },
+    "UI-MIGRATION-CONTRACT.md": {
+      "sha256": "acee834459777c747903d46429ac5e811fe664023337d0987f8ef6dbfbfee6ef",
+      "sourcePath": "source/src/resources/design-system/UI-MIGRATION-CONTRACT.md",
+      "upstreamManifestMatched": true
+    },
+    "VUE-ANT-MAPPING.md": {
+      "sha256": "d1b2b5618f9144eea25a0322aa57a36a09c0c747c0bda8699f8fcff8f01bbd58",
+      "sourcePath": "source/src/resources/design-system/VUE-ANT-MAPPING.md",
+      "upstreamManifestMatched": true
+    },
+    "oneos-ds-tokens.css": {
+      "sha256": "28677b5b0c5b32937f6e3d22b3cd8814770c7fc0abb9758e6a2affa5ca23310e",
+      "sourcePath": "source/src/resources/design-system/oneos-ds-tokens.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/OneosDesignProvider.vue": {
+      "sha256": "65f9021ea075bfe68fee63bbcf9c249e7d3ad749db4ff00d6d3bfc1f9bab798d",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/OneosDesignProvider.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/export-package.mjs": {
+      "sha256": "093dd5048a3393368302b7ac2fa098fc487df9b98aa90c2368e2d0c89c32eef2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/export-package.mjs",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/preferences.d.mts": {
+      "sha256": "af64eb2cbb670e337c0b75835df92d8a282bf8420ca6aad83ced23300a0ee3da",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/preferences.d.mts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/runtime.css": {
+      "sha256": "c421500ec4b71fa49dfb3ea15c95ef453158bd26ac92395e1dce9ff030dd8eda",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/runtime.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/sync-generated.mjs": {
+      "sha256": "fb8ce65d7cde34d1b55873aecade8728aa8b220f2e2a7e571bba54f10e4368b2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/sync-generated.mjs",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/generated-sources.json": {
+      "sha256": "6687338acd5820e7bc83ffebcf33f99345b0bac7ea850a5edb4a282345b7174d",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/generated-sources.json",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/query.scoped.css": {
+      "sha256": "fe5d1d8ab6138ea80c7471ea0400f8977b077725e3eb470cb6c39eca568940e1",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/query.scoped.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/preferences.mjs": {
+      "sha256": "48b776525d819a86035cfb442b57d57d7be146e5d5932a9d0e22ea4cdd7e5f54",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/preferences.mjs",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/colors.mjs": {
+      "sha256": "7a99661ff0ce1dddcdba940664e694ccc2daff6d35c51336c8c17e631ebad0b7",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/colors.mjs",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/README.md": {
+      "sha256": "b882b2454a8d77548256380791e5e2d5a96c3622831eede23493f98e20fca73f",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/README.md",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/select-accessibility.ts": {
+      "sha256": "92c3e85b22c0b132c81fa2493f18dafd914d1dbe23e751efd620d0465d6158d8",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/select-accessibility.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/base-theme.ts": {
+      "sha256": "7c11f4201776114e10d5de0661511a2e22e3c66f819991b4be5c6441ad9f322e",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/base-theme.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/colors.d.mts": {
+      "sha256": "55d4a66e7641c1a3d52253f893889a2b2c86f97c59305ada1cfe25ee24d1310d",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/colors.d.mts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/patterns.scoped.css": {
+      "sha256": "fc48377de963ddfceb4941b8c736d92510f1ed7a7cfb92f0c91e52a8d1bdd491",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/patterns.scoped.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/host-theme-guard.ts": {
+      "sha256": "a8d50898551561c762e3eae25488c1d6e60bc760dd2505c541639424b8a7494b",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/host-theme-guard.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/notice-theme.ts": {
+      "sha256": "3d0d19d9a85317b103e79a31985ab5e9747a76cb8d61e280bc081e162dc1dae5",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/notice-theme.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/theme.ts": {
+      "sha256": "e7472c3e0337f714406e61131f0bcce047c9de3f068c8d464397061885f78f0a",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/theme.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/pattern-contract.css": {
+      "sha256": "ba1c46def4b4993043ff47a7883601afbc086663be111bbd30af842ff701d8ce",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/pattern-contract.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/runtime-v1/fonts/runtime-mono.css": {
+      "sha256": "dbd5fc01c42118c1217901088a9b86dd262790fdb874be9a44c12cac36e3e406",
+      "sourcePath": "source/src/resources/design-system/vue-kit/runtime-v1/fonts/runtime-mono.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosQueryFields.vue": {
+      "sha256": "b11ff8901abd4c410fb76aeaece5ef6692767942c828cfc13bc14c790defef64",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosQueryFields.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosPage.vue": {
+      "sha256": "55d742ce0ce158bff745f811b1947558a8ada4d79c1d4a0e88d3b033871f45c7",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosPage.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosLedgerCell.vue": {
+      "sha256": "74b1ec08ea8915bfd5c30eb949a1bb13cf1266c1ee344348743fa1ec893be2f7",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosLedgerCell.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosValidationIndicator.vue": {
+      "sha256": "38964e52fb88f539e99f36e770e03b3c8cb6049ff34b66410fa4314a27cf6875",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosValidationIndicator.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosImageViewer.vue": {
+      "sha256": "8c737d850289db01526be5b6fa60b74af891a491da03a0345b2f5d30c27aa7fa",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosImageViewer.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosFieldGrid.vue": {
+      "sha256": "01355852abc2af689536b84edf873afa388c1ef46ee08cf555ce4efe3aaedd02",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosFieldGrid.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosKpiStrip.vue": {
+      "sha256": "add1af49f7594e52c9a3135fe5d87c4b1aef09b29c38e05b5b75c517aca895d2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosKpiStrip.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/shell.css": {
+      "sha256": "4b2fc3aa9e637d139c6e92d9ab8f99485f8b10bde26e068ea9b472f97c20cd3f",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/shell.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/query.css": {
+      "sha256": "ef4ba6ca7c8a257056796602988fde62a79518d359d705d3f94a9f223192a834",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/query.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosShellBrand.vue": {
+      "sha256": "d046f319f2dbdd3a1f4df9e866a5384481ea000c489072ee76b797d1e6ff7251",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosShellBrand.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosSection.vue": {
+      "sha256": "ffe8fe28d3e061db1e4e07216cc0b71ec73504b6077236e942425bb06782f560",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosSection.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosToolbar.vue": {
+      "sha256": "e09eb3aef2f616f665c7244a9d8deb433b9e7349db7fd05834f4bf14284ae102",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosToolbar.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosDescriptions.vue": {
+      "sha256": "d1b892119ebe9ddfa9eec5071d4624a59691e57c97ad88d1bd88cab33f5c0070",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosDescriptions.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/index.ts": {
+      "sha256": "ae7db21ac9d5625a888ada248b1bbbc44aa751bfb64bc313552679d023919f1c",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/index.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/OneosSurface.vue": {
+      "sha256": "1d00fc550027d614a24d7fa9f2c2c43a6af6f54e6cb48aacb8b44358cf42d3de",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/OneosSurface.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/patterns.css": {
+      "sha256": "77f1450db6b035a66ac5a1826403b45139a6ec930a52b9104c0bb63c043348ad",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/patterns.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/status-ledger/fixtures.ts": {
+      "sha256": "ca4b696e714466b04efcfe014323fdcf6c566511c2bc12be60353d227af98ba9",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/status-ledger/fixtures.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/status-ledger/OneosStatusLedger.vue": {
+      "sha256": "7852745d029f99c0f7e898b7ea041751d277f9089dab4bfee92f2139ff0915e4",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/status-ledger/OneosStatusLedger.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/status-ledger/status-ledger.css": {
+      "sha256": "103c2029c7d39be5eb0cb44b341960dab6ba69e79cc97b902ddd2887cc06f9ae",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/status-ledger/status-ledger.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/status-ledger/README.md": {
+      "sha256": "71081b40c850c498d569b6aa6e305e7fadb333b3e4ea324c335542ff3b82f1d2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/status-ledger/README.md",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/status-ledger/OneosLedgerPagination.vue": {
+      "sha256": "9762fe44faed67b2cc98860b29d0ec5f6e1c34c1b9728d16056611d3d557a8ea",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/status-ledger/OneosLedgerPagination.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/column-settings/vxe-column-order.mjs": {
+      "sha256": "b3ec65282550a8bbf8d8d4d6e79057b0ec46cee94dda82e08d78987ea924748f",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/column-settings/vxe-column-order.mjs",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/column-settings/ColumnSettingsPopover.vue": {
+      "sha256": "b5206207f658123c23007c9a5c285cbe3b76294f768af8a2a26f6fdc198c6ffb",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/column-settings/ColumnSettingsPopover.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/patterns/column-settings/column-settings.mjs": {
+      "sha256": "10f7fa09ec75cf3e0cc9c9787ab0c6f00a0e43b5364dc3d9e93030e0acf6ea70",
+      "sourcePath": "source/src/resources/design-system/vue-kit/patterns/column-settings/column-settings.mjs",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/multi-action-fixtures.ts": {
+      "sha256": "a691e0e376268853fd4cb55f571c852ec7459fd8de2db056836541641eeffa50",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/multi-action-fixtures.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/source-manifest.json": {
+      "sha256": "44589306035efe25e191020e50c71b16a043f2aaf29ef48bf7a9f12cb2f03bb2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/source-manifest.json",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/App.vue": {
+      "sha256": "3c31a555b4ed1c92ec03f7bf7ec936d9a9a7a80d6dbe2d251d7550ef514a29c2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/App.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/fixtures.ts": {
+      "sha256": "bad1c53abe5b8cff1acf40848c3c23f68c79458387df07b27fe79285e6d4b990",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/fixtures.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/DetailExample.vue": {
+      "sha256": "4c205b2ff080b64c195fc7bb1838117ff4c0817751d11e0e75fe2c749a1fa92b",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/DetailExample.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/NestedLeaseDetail.vue": {
+      "sha256": "aa4f54d943838d228770d273204651c0042b323e9abf25f9bac6825b557d2305",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/NestedLeaseDetail.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/image-viewer.html": {
+      "sha256": "7652bbe6184978af39061d43d319bc9663a2abaaee16389fb36c9bfedff271d5",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/image-viewer.html",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/NestedLeaseLedger.vue": {
+      "sha256": "8ad41da354f44bd58b9b59232f5079fd21533f869e8e8b90201754dfcfcdb17c",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/NestedLeaseLedger.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/CustomerResponsivePanels.vue": {
+      "sha256": "cc146e9886324fab8b238218ad946ead92cb0e4824c9506a03e43ddbff726e99",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/CustomerResponsivePanels.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/index.html": {
+      "sha256": "7805fa8798066c0359b01a5ee756af2065762d6d5e03fb881fd587a146f165cc",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/index.html",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/multi-action.css": {
+      "sha256": "1659766b0c67e29abb5eeab8cd3d6584f868b1ed247c1bc52c795af4a564e1b5",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/multi-action.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/image-viewer-vite.config.ts": {
+      "sha256": "454e27a168b4cfd2417fa2992b29b118fcda80f8b2f7840acd47b66b8d067667",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/image-viewer-vite.config.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/main.ts": {
+      "sha256": "eff322739665b50dc1267e6253a97e2d260b7a8827dccbacde60ff6ebba81427",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/main.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/CustomerResponsiveApp.vue": {
+      "sha256": "b91d4b1d573a5fea15133b0f7ad917cf2d6463c18e097f76a3eaf3fa22b2b25b",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/CustomerResponsiveApp.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/NestedLeaseVehicleIdentity.vue": {
+      "sha256": "c500fbd0da7db1e354baff43b0a6b476fa5131d345659e81d112edf32260461e",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/NestedLeaseVehicleIdentity.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/ImageViewerStandalone.vue": {
+      "sha256": "0d10b815e05eeefdd8b9fc38a0f9e34f91b00958a980b85080e2d4386e4d42eb",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/ImageViewerStandalone.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/ComponentStates.vue": {
+      "sha256": "cbab62dd05b9b0669b0647bb83b06665ce94f151d0695b09e387da56deaf8a56",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/ComponentStates.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/nested-lease-replacements.ts": {
+      "sha256": "ce9328be8e3e3e6c485d908edf30e4bbc2b85392aa461f3114009494bfe6e2ba",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/nested-lease-replacements.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/CustomerResponsivePage.vue": {
+      "sha256": "ac9798f07a2578c0062a397600632ac5270da7fa39d4a044b49c7429adbb2b5b",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/CustomerResponsivePage.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/lab.css": {
+      "sha256": "74e739add9f9597fcc7a62a3d4249bfd24356a65b65a4b56db96f74aaa84df8e",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/lab.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/FormExample.vue": {
+      "sha256": "f2c2b427a772472e65461e8b1a925882c368cdd8661ab5a8b79dff2f8774c97e",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/FormExample.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/README.md": {
+      "sha256": "611b5e691cbf671f8d14537689ac7ab4baf5fbe83fa2519857d889b537199a2c",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/README.md",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/image-viewer-main.ts": {
+      "sha256": "b087ed4951a646f6a71735ff53450038e425e692781df4b68accfd5fdb52f7fd",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/image-viewer-main.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/ValidationLedger.vue": {
+      "sha256": "d4c44ddad190bbe302f6226d6a7346c4c8c65232f623259afdef097d3ee710b2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/ValidationLedger.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/nested-lease.css": {
+      "sha256": "1d770604ab131078fe85120a7e6c2e025d70ed270712d6bdc8ded7f7d6250cf3",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/nested-lease.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/ImageViewerExample.vue": {
+      "sha256": "423886e726d4f69173eab799a86d61201a3d9d5c96ebbbc79a283bb4eef87cbb",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/ImageViewerExample.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/review-1.3.css": {
+      "sha256": "59c2565ca81b98339692bf73ddc4b8fb38cff2616564a11306e942a6171cba85",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/review-1.3.css",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/MultiActionLedger.vue": {
+      "sha256": "6a1e42b4dca1dc8d6489fa9999fd907625522d0bae0ab4de023bc5ad41814373",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/MultiActionLedger.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/NestedLeaseVehicles.vue": {
+      "sha256": "71366183e7254af69d262f1a62d1d860ecd2c1d20379c9821617a5bd513492bb",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/NestedLeaseVehicles.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/vite.config.ts": {
+      "sha256": "54e85be1650790d953a0d0df645f29b77d22e2893ee2b423c2099359ee54dbb8",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/vite.config.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/LedgerExample.vue": {
+      "sha256": "b4abfddb229a4c3109b53ddfc1c98745f79804ceaf5f6a20b29b2859e4f8d43b",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/LedgerExample.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/nested-lease-fixtures.ts": {
+      "sha256": "81be9b43f35b6245c419a26f735721936f6179db8a8a10fd765fd4be4870c046",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/nested-lease-fixtures.ts",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/NestedLeaseHistory.vue": {
+      "sha256": "639679c03d678472d164e5f9302bf5c336b23a7d55765379233ef69345cdfaa2",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/NestedLeaseHistory.vue",
+      "upstreamManifestMatched": true
+    },
+    "vue-kit/examples-1.3/image-viewer-tsconfig.json": {
+      "sha256": "4753a4b5ccf3b45a1862ef6104ed66210961e955ccf3ef223db2bd8350575756",
+      "sourcePath": "source/src/resources/design-system/vue-kit/examples-1.3/image-viewer-tsconfig.json",
+      "upstreamManifestMatched": true
+    },
+    "templates/page-design-review.md": {
+      "sha256": "b361e1a63fce5310a78476c9560dc76f2e7c789ea36ce9b0d0affae8ba7f9e23",
+      "sourcePath": "source/src/resources/design-system/templates/page-design-review.md",
+      "upstreamManifestMatched": true
+    }
+  }
+}

@@ -1,0 +1,381 @@
+/**
+ * OneOS Design System Next — Global CSS Variables
+ * 事实源：tokens.json / ONEOS-DESIGN.md §1
+ * 出厂主色青绿 #007A55（Ant 密度台账 + 10px 圆角）
+ * 完全支持 Light / Dark 双色模式无缝切换
+ */
+
+/* 等宽数字：自托管 JetBrains Mono（ONEOS-DESIGN.md §1.5），禁止 Google Fonts CDN */
+@import './fonts/jetbrains-mono/jetbrains-mono.css';
+@import './oneos-ds-filter-affordance.css';
+@import './oneos-ds-form-feedback.css';
+@import './oneos-ds-kpi.css';
+@import './oneos-ds-page-chrome.css';
+
+:root {
+  /* Brand & RuoYi Dynamic Theme Color Bridge */
+  --oneos-primary: var(--ln-primary, #007a55);
+  --oneos-primary-hover: var(--ln-primary-hover, #009966);
+  --oneos-primary-focus: var(--ln-primary-focus, #006045);
+  --oneos-primary-soft: var(--ln-primary-soft, #d1fae5);
+  --ln-primary: #007a55;
+  --ln-primary-hover: #009966;
+  --ln-primary-focus: #006045;
+  --ln-primary-soft: #d1fae5;
+  --ln-primary-soft-solid: #ecfdf5;
+  --ln-on-primary: #ffffff;
+  --ln-link: var(--oneos-primary, #007a55);
+
+  /* Neutral text */
+  --ln-ink: #0a2540;
+  --ln-body: #425466;
+  --ln-muted: #627d98;
+  --ln-muted-soft: #9fb3c8;
+
+  /* Surfaces */
+  --ln-canvas: #f3f5f8;
+  --ln-canvas-parchment: #f3f5f8;
+  --ln-canvas-soft: #f8fafc;
+  --ln-motion-fast: 120ms;
+  --ln-motion-mid: 160ms;
+  --ln-ease: cubic-bezier(0.2, 0, 0, 1);
+  --ln-elev-1: 0 1px 2px rgba(10, 37, 64, 0.04);
+  --ln-elev-2: 0 10px 32px rgba(10, 37, 64, 0.1);
+  --ln-surface-card: #ffffff;
+  --ln-surface-strong: #f1f5f9;
+  --ln-overlay: rgba(10, 37, 64, 0.45);
+  /* 毛玻璃底（H5 顶栏 / 底部导航 backdropBlur）。此前全仓未定义，
+     V2MobileBottomNav 只能回落到写死的白色 rgba，暗色下整条底栏漂成白块。 */
+  --ln-surface-card-translucent: rgba(255, 255, 255, 0.92);
+
+  /* Borders：三级对齐现网实测（DESIGN-NEXT §2.0.4）
+     现网边框实测 7 种，其中 #eef2f6 与 #eef2f7 差 1 属手抄误差，已收敛。 */
+  --ln-hairline-weak: #eef2f6; /* 面分隔：卡内分区、表格行线 */
+  --ln-hairline: #dce3eb; /* 常规：卡片外框 */
+  --ln-hairline-strong: #c7d2dd; /* 控件描边：input / 次按钮 */
+
+  /* Semantic */
+  --ln-success: #10b981;
+  --ln-success-soft: #dcfce7;
+  --ln-warning: #d97706;
+  --ln-warning-soft: #fef3c7;
+  --ln-error: #ef4444;
+  --ln-error-soft: #fee2e2;
+  --ln-info: #3b82f6;
+  --ln-info-soft: #dbeafe;
+
+  /* Radius */
+  --ln-radius-xs: 4px;
+  --ln-radius-sm: 6px;
+  --ln-radius-control: 10px;
+  --ln-radius-card: 10px;
+  --ln-radius-xl: 16px;
+  --ln-radius-pill: 9999px;
+
+  /* Spacing scale */
+  --ln-space-1: 4px;
+  --ln-space-2: 8px;
+  --ln-space-3: 12px;
+  --ln-space-4: 16px;
+  --ln-space-5: 20px;
+  --ln-space-6: 24px;
+  --ln-space-8: 32px;
+  --ln-space-10: 40px;
+
+  /*
+   * 台账密度 = Ant Design Vue size=middle（ONEOS-DESIGN.md §1.4）
+   * 禁止再锁 V2 产品站 87px 行高。
+   */
+  --ln-control-height: 36px;
+  /* 两字按钮下限；图标钮 / 文字链 / 表内小号钮不受限。
+     现网关了 Ant autoInsertSpaceInButton，「新增」不再被撑成「新 增」，故须补下限。 */
+  --ln-control-min-width: 72px;
+  /* 上下各 8：与 §2.2 行高算式配套（单行 ≥48 / 双行 ≥54 / 三行 ≥72）。
+     曾为 10px，与算式对不上，导致「三行 ≈64」这类错值在文档间流传。 */
+  --ln-table-cell-padding-y: 8px;
+  --ln-table-cell-padding-x: 12px;
+  /* 密集档内距（视口定高台账，约 10 行/屏）。这是**唯一**受控的第二密度，
+     算式同 §2.2 但内距取 4：单行 ≥40 / 双行 ≥46 / 三行 ≥64（min-height 48 仍兜底）。
+     用法：给台账根挂 .ln-density-compact 或 [data-ln-density="compact"]。
+     禁止再在页面里私写 padding: 4px !important —— 那正是「三行 64 / 72」两套数字打架的来源。 */
+  --ln-table-cell-padding-y-compact: 4px;
+  /* 下限而非目标值：基准页实测复合行 61（§2.2） */
+  --ln-table-row-min-height: 48px;
+  --ln-table-th-padding-y: 8px;
+  --ln-table-th-padding-x: 12px;
+  /*
+   * 右粘操作列阴影 Token（ONEOS-DESIGN.md §3.5.4）
+   * - edge：左侧纵深，软、勿当「深竖边框」；spread 偏负，避免硬刀口
+   * - th：必须 = edge + 表头主色 inset 下边线叠写（CSS box-shadow 不合并，单写 edge 会盖掉主色线）
+   */
+  --ln-sticky-ops-edge: -6px 0 12px -8px rgba(10, 37, 64, 0.1);
+  --ln-sticky-ops-th-underline: inset 0 -2px 0 0 var(--oneos-primary, var(--ln-primary, #007a55));
+  --ln-sticky-ops-th-shadow: var(--ln-sticky-ops-edge), var(--ln-sticky-ops-th-underline);
+
+  /*
+   * ── 浮层层级单源（ONEOS-DESIGN.md §2.8）─────────────────────────
+   *
+   * 立项依据（2026-08-27 实测）：此前无层级 Token，各组件硬编码，必然撞车。
+   * 弹窗遮罩写 10060、`V2Select` 面板写 10050 → **弹窗里的下拉面板被自家遮罩埋掉**，
+   * 触发器箭头翻上去了却看不见选项，点面板中心命中的是弹窗脚部（选项根本点不到）。
+   * `V2Toast` 写 4000，低于应用外壳 10000 → 提示被外壳盖住。
+   *
+   * 硬原则：**触发型浮层 > 容器型浮层 > 应用外壳**。
+   * 因为下拉 / 日期 / 级联总是**从弹窗内部**触发的，天然要压在弹窗之上；
+   * 反过来排就一定出现「面板开了但看不见」。
+   *
+   * 新增浮层一律引这些 Token，禁止再写字面量。
+   */
+  --ln-z-sticky: 20;              /* 表头 / 右粘操作列 */
+  --ln-z-h5-bar: 90;              /* H5 顶栏 / 底栏 */
+  --ln-z-app-shell: 10000;        /* 应用外壳顶栏 / 侧栏（既有值，勿动） */
+  --ln-z-overlay-mask: 10060;     /* 弹窗 / 抽屉遮罩 */
+  --ln-z-overlay: 10061;          /* 弹窗 / 抽屉本体 */
+  --ln-z-popover: 10080;          /* 触发型浮层：下拉 / 日期 / 级联 / H5 Sheet */
+  --ln-z-toast: 10090;            /* 提示最高，任何业务层之上都要看得见 */
+  /*
+   * 调试层压最上（2026-08-28 补）：PROTO DEBUG 条、视口/主题切换、比选切换器
+   * 按 Rule `oneos-prototype-debug-chrome` 须在展示区之外，且开着弹窗时也得点得到，
+   * 否则演示中途没法切状态。此前各页自己写 9000 / 9400 / 99999 / 100000 互相压，
+   * 收进这一档统一管。**仅限调试控件**，业务浮层引上面几档。
+   */
+  --ln-z-debug: 10100;            /* 原型调试条 / 比选切换器（非产品 UI） */
+
+  /* Typography */
+  /*
+   * 正文字体（系统栈 · DESIGN §2.2 A 档）：
+   * - 不自托管中文（接受 Mac 苹方 / Win 雅黑平台差）
+   * - 英文 UI：系统 UI → Segoe UI → Roboto
+   * - 汉字：PingFang SC（Mac）→ Microsoft YaHei（Win）→ 浏览器默认
+   * - 禁止写未加载的 Inter 冒充主栈
+   */
+  --vm-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --ln-font: var(--vm-font);
+  /*
+   * 等宽数字栈（跨端统一 · DESIGN §2.2）：
+   * 1) JetBrains Mono — 自托管 woff2，主路径（Mac/Win/内网一致）
+   * 2) Cascadia Mono / Cascadia Code — Windows 11+ 失败态（本机有则用）
+   * 3) Consolas — Windows 经典失败态
+   * 4) SF Mono / Menlo — macOS 失败态
+   * 禁止把 ui-monospace 写在 JetBrains 前面。
+   */
+  --vm-font-mono: "JetBrains Mono", "Cascadia Mono", "Cascadia Code", Consolas, "SF Mono", SFMono-Regular, Menlo, "Courier New", monospace;
+  --ln-font-mono: var(--vm-font-mono);
+}
+
+/*
+ * 密集档开关（ONEOS-DESIGN.md §2.2）：只改内距，不改行盒、不改 min-height 下限，
+ * 因此不会压掉任何一行内容——密度靠减内距拿，不靠裁切拿。
+ */
+.ln-density-compact,
+[data-ln-density='compact'] {
+  --ln-table-cell-padding-y: var(--ln-table-cell-padding-y-compact);
+}
+
+/* 原生 <table> 台账行高标准（可直接挂 class） */
+.ln-data-table thead th {
+  padding: var(--ln-table-th-padding-y) var(--ln-table-th-padding-x);
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.ln-data-table tbody td {
+  padding: var(--ln-table-cell-padding-y) var(--ln-table-cell-padding-x);
+  /* 下限写 height：对 table-cell，height 的语义就是**最小高度**，内容更高照常撑开
+     （实测 height:48 + 三行内容 = 68px）。min-height 对 table-cell 无效，
+     曾在此处写了却一直不生效，导致 --ln-table-row-min-height 形同虚设（ONEOS-DESIGN.md §2.2）。
+     真正压扁内容的是 max-height / line-height:0 / 内层容器定高，那些仍禁。 */
+  height: var(--ln-table-row-min-height);
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* 复合单元格：事实标准是母版 vehicle-management 的 .va-ledger-cell 系列（ONEOS-DESIGN.md §3.5）。
+   此处曾并行定义过一套 .ln-cell-stack，母版并未采用，属「定义了没人用」，已移除。
+   要收敛请改母版类名并同步引用，不要再并行新增第二套。 */
+
+/* 表格内车牌 / VIN / 日期 / 金额：等宽 + 定宽数字 */
+.ln-mono {
+  font-family: var(--ln-font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 暗色模式 Token 映射 (Stripe Dark Fintech) */
+[data-ds-mode="dark"],
+[data-oneos-theme="dark"],
+[data-oneos-theme-mode="dark"],
+.dark {
+  --ln-primary: #007a55;
+  --ln-primary-hover: #009966;
+  --ln-primary-focus: #006045;
+  --ln-primary-soft: rgba(0, 122, 85, 0.22);
+  --ln-primary-soft-solid: rgba(0, 122, 85, 0.28);
+  --ln-on-primary: #ffffff;
+  --ln-link: #34d399;
+
+  --ln-ink: #f7fafc;
+  --ln-body: #a0aec0;
+  --ln-muted: #718096;
+  --ln-muted-soft: #4a5568;
+
+  --ln-canvas: #0a0b0d;
+  --ln-canvas-parchment: #0a0b0d;
+  --ln-canvas-soft: #16181f;
+  --ln-surface-pearl: #16181f;
+  --ln-surface-card: #121418;
+  --ln-surface-strong: #1e222d;
+  --ln-overlay: rgba(0, 0, 0, 0.65);
+  --ln-surface-card-translucent: rgba(18, 20, 24, 0.92);
+
+  --ln-hairline-weak: #1c1f26;
+  --ln-hairline: #23272f;
+  --ln-hairline-strong: #2d3748;
+
+  --ln-sticky-ops-edge: -6px 0 12px -8px rgba(0, 0, 0, 0.45);
+  --ln-sticky-ops-th-underline: inset 0 -2px 0 0 var(--oneos-primary, var(--ln-primary, #007a55));
+  --ln-sticky-ops-th-shadow: var(--ln-sticky-ops-edge), var(--ln-sticky-ops-th-underline);
+
+  --ln-success: #10b981;
+  --ln-success-soft: rgba(16, 185, 129, 0.15);
+  --ln-warning: #d97706;
+  --ln-warning-soft: rgba(217, 119, 6, 0.15);
+  --ln-error: #ef4444;
+  --ln-error-soft: rgba(239, 68, 68, 0.15);
+  --ln-info: #3b82f6;
+  --ln-info-soft: rgba(59, 130, 246, 0.15);
+}
+
+/* Grid & Layout Utilities */
+.ds-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--ln-space-4);
+}
+@media (max-width: 1024px) {
+  .ds-bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .ds-bento-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ds-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--ln-space-4) var(--ln-space-3);
+  align-items: end;
+}
+
+.ds-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--ln-space-5);
+}
+
+.ds-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--ln-space-4);
+}
+
+.ds-split-layout {
+  display: flex;
+  gap: var(--ln-space-4);
+}
+.ds-split-sidebar {
+  width: 340px;
+  flex-shrink: 0;
+}
+.ds-split-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* —— §3.1.2 表单字段必填 / 选填：轻量字标，禁红胶囊抢戏 —— */
+.v2-field-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ln-ink, #0a2540);
+  line-height: 1.4;
+}
+
+.v2-field-label__text {
+  min-width: 0;
+}
+
+.v2-field-req-pill,
+.v2-field-opt-pill {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.v2-field-req-pill {
+  font-weight: 500;
+  color: var(--ln-error, #ef4444);
+}
+
+.v2-field-opt-pill {
+  font-weight: 400;
+  color: var(--ln-muted, #627d98);
+}
+
+[data-ds-mode='dark'] .v2-field-label,
+[data-oneos-theme='dark'] .v2-field-label,
+[data-oneos-theme-mode='dark'] .v2-field-label {
+  color: var(--ln-ink, #f7fafc);
+}
+
+[data-ds-mode='dark'] .v2-field-req-pill,
+[data-oneos-theme='dark'] .v2-field-req-pill,
+[data-oneos-theme-mode='dark'] .v2-field-req-pill {
+  color: #fca5a5;
+}
+
+[data-ds-mode='dark'] .v2-field-opt-pill,
+[data-oneos-theme='dark'] .v2-field-opt-pill,
+[data-oneos-theme-mode='dark'] .v2-field-opt-pill {
+  color: var(--ln-muted, #a0aec0);
+}
+
+/*
+ * DESIGN §2.2 · 数据数字等宽工具类（台账单元格 + 表单控件共用）
+ * 仅开 tabular-nums 不够；必须同时切 --ln-font-mono。
+ * 适用：车牌 / VIN / 单号 / 证号 / 卡号 / 金额 / 日期时间字符串 / 天数。
+ * 不适用：纯中文姓名、业户名称、卡类型等无数据数字的正文。
+ */
+.ln-mono,
+.bfcl-mono {
+  font-family: var(--ln-font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+input.ln-mono,
+input.bfcl-mono,
+textarea.ln-mono,
+textarea.bfcl-mono,
+.ln-mono input,
+.bfcl-mono input {
+  font-family: var(--ln-font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 浏览器对 type=number 常强制 UA 字族；显式覆盖 */
+input.ln-mono[type='number'],
+input.bfcl-mono[type='number'] {
+  font-family: var(--ln-font-mono);
+  font-variant-numeric: tabular-nums;
+}

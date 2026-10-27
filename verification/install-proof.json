@@ -1,0 +1,29 @@
+{
+  "scope": "isolated local source installation using skills@1.7.4, not HiFox import or remote install",
+  "results": [
+    {
+      "skill": "oneos-work-delivery",
+      "packageValid": true,
+      "filesChecked": 115,
+      "errors": []
+    },
+    {
+      "skill": "oneos-work-knowledge",
+      "packageValid": true,
+      "filesChecked": 115,
+      "errors": []
+    },
+    {
+      "skill": "oneos-work-ux",
+      "packageValid": true,
+      "filesChecked": 115,
+      "errors": []
+    },
+    {
+      "skill": "oneos-work-verify",
+      "packageValid": true,
+      "filesChecked": 115,
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["ES2022", "DOM"]
+  },
+  "include": [
+    "image-viewer-main.ts",
+    "ImageViewerStandalone.vue",
+    "ImageViewerExample.vue",
+    "../patterns/OneosImageViewer.vue",
+    "../patterns/OneosSurface.vue",
+    "../patterns/OneosPage.vue",
+    "../patterns/OneosSection.vue",
+    "../../antd-theme.ts"
+  ]
+}

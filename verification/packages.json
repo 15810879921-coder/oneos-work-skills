@@ -1,0 +1,70 @@
+[
+  {
+    "skill": "oneos-work-delivery",
+    "entryCharacters": 692,
+    "fileCount": 116,
+    "bytes": 895362,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-delivery@1.0.0",
+      "sharedDigest": "243685ff79c11c8d1f241636182fcdbabc34c6d939b0b4c3dfd5dcde09be1400",
+      "filesChecked": 115,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    }
+  },
+  {
+    "skill": "oneos-work-knowledge",
+    "entryCharacters": 639,
+    "fileCount": 116,
+    "bytes": 895360,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-knowledge@1.0.0",
+      "sharedDigest": "243685ff79c11c8d1f241636182fcdbabc34c6d939b0b4c3dfd5dcde09be1400",
+      "filesChecked": 115,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    }
+  },
+  {
+    "skill": "oneos-work-ux",
+    "entryCharacters": 644,
+    "fileCount": 116,
+    "bytes": 895302,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-ux@1.0.0",
+      "sharedDigest": "243685ff79c11c8d1f241636182fcdbabc34c6d939b0b4c3dfd5dcde09be1400",
+      "filesChecked": 115,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    }
+  },
+  {
+    "skill": "oneos-work-verify",
+    "entryCharacters": 728,
+    "fileCount": 116,
+    "bytes": 895378,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-verify@1.0.0",
+      "sharedDigest": "243685ff79c11c8d1f241636182fcdbabc34c6d939b0b4c3dfd5dcde09be1400",
+      "filesChecked": 115,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    }
+  }
+]

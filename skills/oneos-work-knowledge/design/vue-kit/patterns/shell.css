@@ -1,0 +1,109 @@
+/* Opt-in OneOS chrome. Selectors never style the business content or its forms. */
+.oneos-app-shell :is(.oneos-shell-sidebar, .oneos-shell-header, .oneos-shell-tabs) {
+  --oneos-shell-primary: hsl(var(--primary));
+  --oneos-shell-surface: #ffffff;
+  --oneos-shell-fill: #f4f6fa;
+  --oneos-shell-ink: #12304a;
+  --oneos-shell-body: #46586a;
+  --oneos-shell-muted: #76899b;
+  --oneos-shell-line: #e6ecf2;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: var(--oneos-shell-body);
+  border-color: var(--oneos-shell-line);
+}
+.oneos-app-shell :is(.oneos-shell-sidebar, .oneos-shell-header, .oneos-shell-tabs).dark,
+.dark .oneos-app-shell :is(.oneos-shell-sidebar, .oneos-shell-header, .oneos-shell-tabs) {
+  --oneos-shell-surface: #141d2b;
+  --oneos-shell-fill: #1b2738;
+  --oneos-shell-ink: #e3edf8;
+  --oneos-shell-body: #b4c4d6;
+  --oneos-shell-muted: #8095ad;
+  --oneos-shell-line: #253448;
+}
+.oneos-app-shell .oneos-shell-sidebar { background: var(--oneos-shell-surface); }
+.oneos-app-shell .oneos-shell-sidebar__brand { border-bottom: 1px solid var(--oneos-shell-line); }
+.oneos-shell-brand { display: flex; width: 100%; height: 100%; align-items: center; gap: 10px; padding: 0 20px; text-align: left; background: transparent; border: 0; cursor: pointer; }
+.oneos-shell-brand__mark { display: flex; flex: 0 0 32px; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 9px; background: hsl(var(--primary)); color: white; }
+.oneos-shell-brand__mark svg { width: 23px; height: 23px; }
+.oneos-shell-brand__text { display: grid; gap: 1px; min-width: 0; }
+.oneos-shell-brand__text strong { font-size: 21px; font-weight: 750; line-height: 24px; letter-spacing: -.7px; color: var(--oneos-shell-ink); }
+.oneos-shell-brand__text small { font-size: 10px; font-weight: 500; line-height: 13px; color: var(--oneos-shell-muted); white-space: nowrap; }
+.oneos-shell-brand.is-collapsed { justify-content: center; padding-inline: 0; }
+
+.oneos-app-shell .oneos-shell-sidebar .vben-menu {
+  --menu-font-size: 13px;
+  --menu-title-width: 100%;
+  --menu-item-icon-size: 18px;
+  --menu-item-height: 38px;
+  --menu-item-padding-y: 0px;
+  --menu-item-padding-x: 12px;
+  --menu-item-margin-y: 3px;
+  --menu-item-margin-x: 10px;
+  --menu-item-radius: 8px;
+  --menu-item-indent: 18px;
+  --menu-item-collapse-padding-y: 0px;
+  --menu-item-collapse-margin-y: 6px;
+  --menu-background-color: var(--oneos-shell-surface);
+  --menu-item-background-color: transparent;
+  --menu-item-color: var(--oneos-shell-body);
+  --menu-item-active-color: var(--oneos-shell-primary);
+  --menu-item-active-background-color: color-mix(in srgb, var(--oneos-shell-primary) 10%, var(--oneos-shell-surface));
+  --menu-item-hover-background-color: var(--oneos-shell-fill);
+  --menu-submenu-background-color: transparent;
+  --menu-submenu-active-color: var(--oneos-shell-primary);
+  --menu-submenu-active-background-color: transparent;
+  --menu-submenu-hover-color: var(--oneos-shell-ink);
+  --menu-submenu-hover-background-color: var(--oneos-shell-fill);
+  background: transparent;
+}
+.oneos-app-shell .oneos-shell-sidebar .vben-menu.is-vertical > .vben-sub-menu { margin-bottom: 3px; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu.is-vertical > .vben-sub-menu > .vben-sub-menu-content { height: 40px; font-weight: 600; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu__icon { flex-shrink: 0; width: 18px; height: 18px; margin-right: 10px; opacity: .85; }
+.oneos-app-shell .oneos-shell-sidebar :is(.vben-menu-item, .vben-sub-menu-content):hover .vben-menu__icon { transform: none; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu-item { font-weight: 500; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu-item.is-active { font-weight: 650; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu-item.is-active::before { content: ''; position: absolute; left: 0; top: 11px; bottom: 11px; width: 3px; border-radius: 0 3px 3px 0; background: var(--oneos-shell-primary); }
+.oneos-app-shell .oneos-shell-sidebar .vben-sub-menu > .vben-menu::before { content: ''; position: absolute; left: 28px; top: 2px; bottom: 5px; width: 1px; background: var(--oneos-shell-line); pointer-events: none; }
+.oneos-app-shell .oneos-shell-sidebar .vben-sub-menu .vben-menu-item__content > svg.vben-menu__icon:empty { width: 4px; height: 4px; margin-right: 12px; border: 1px solid currentColor; border-radius: 50%; opacity: .4; }
+.oneos-app-shell .oneos-shell-sidebar .vben-sub-menu-content__title { padding-right: 22px; }
+.oneos-app-shell .oneos-shell-sidebar .vben-sub-menu-content__icon-arrow { width: 13px; height: 13px; right: 12px; margin-top: -6.5px; opacity: .65; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu.is-collapse .vben-menu__icon { margin-right: 0; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu.is-collapse > .vben-sub-menu > .vben-sub-menu-content { justify-content: center; }
+.oneos-app-shell .oneos-shell-sidebar .vben-menu.is-collapse .vben-menu-item.is-active::before { top: 10px; bottom: 10px; }
+
+.oneos-app-shell .oneos-shell-header { background: var(--oneos-shell-surface); padding-inline: 14px 20px; gap: 2px; }
+.oneos-app-shell .oneos-shell-header button { width: 32px; height: 32px; min-width: 32px; border-radius: 8px; color: var(--oneos-shell-body); }
+.oneos-app-shell .oneos-shell-header button:hover { color: var(--oneos-shell-primary); background: var(--oneos-shell-fill); }
+.oneos-app-shell .oneos-shell-header button svg { width: 16px; height: 16px; }
+.oneos-app-shell .oneos-shell-breadcrumb { margin-left: 8px; padding-left: 12px; border-left: 1px solid var(--oneos-shell-line); }
+.oneos-app-shell .oneos-shell-breadcrumb :is(a,span) { font-size: 12px; color: var(--oneos-shell-muted); }
+.oneos-app-shell .oneos-shell-breadcrumb [aria-current='page'] { color: var(--oneos-shell-ink); font-weight: 650; }
+.oneos-app-shell .oneos-shell-tools { gap: 4px; }
+.oneos-app-shell .oneos-shell-tools > * { margin-block: 0; }
+.oneos-app-shell .oneos-shell-tools > button[aria-haspopup='dialog'] > div { margin: 0; }
+.oneos-app-shell .oneos-shell-tools > button[aria-haspopup='menu'] > div { margin: 0; padding: 0; }
+.oneos-app-shell .oneos-shell-tools .ant-select { width: 176px; }
+.oneos-app-shell .oneos-shell-tools .ant-select-selector { height: 32px !important; background: var(--oneos-shell-surface) !important; border: 1px solid var(--oneos-shell-line) !important; border-radius: 8px !important; box-shadow: none !important; font-size: 12px; }
+.oneos-app-shell .oneos-shell-search { width: 154px; height: 32px; gap: 8px; border: 1px solid var(--oneos-shell-line); border-radius: 8px; background: var(--oneos-shell-fill); color: var(--oneos-shell-muted); }
+.oneos-app-shell .oneos-shell-search > span:last-of-type { margin-left: auto; padding: 3px 5px; border: 1px solid var(--oneos-shell-line); border-radius: 4px; background: var(--oneos-shell-surface); font-size: 10px; }
+.oneos-app-shell .oneos-shell-search:hover { border-color: color-mix(in srgb, var(--oneos-shell-primary) 35%, var(--oneos-shell-line)); }
+
+.oneos-app-shell .oneos-shell-tabs { background: var(--oneos-shell-fill); padding-left: 12px; }
+.oneos-app-shell .oneos-shell-tabs .tabs-chrome__item { margin-right: -2px; }
+.oneos-app-shell .oneos-shell-tabs .tabs-chrome__background { top: 4px; height: calc(100% - 4px); padding-inline: 4px; }
+.oneos-app-shell .oneos-shell-tabs .tabs-chrome__background-content { border-radius: 7px 7px 0 0; }
+.oneos-app-shell .oneos-shell-tabs .tabs-chrome__item.is-active .tabs-chrome__background-content { background: var(--oneos-shell-surface); border: 1px solid var(--oneos-shell-line); border-bottom: 2px solid var(--oneos-shell-primary); }
+.oneos-app-shell .oneos-shell-tabs :is(.tabs-chrome__background-before,.tabs-chrome__background-after,.tabs-chrome__divider) { display: none; }
+.oneos-app-shell .oneos-shell-tabs .tabs-chrome__item-main { margin-inline: 8px; padding-inline: 10px 20px; }
+.oneos-app-shell .oneos-shell-tabs .tabs-chrome__item-main > span { font-size: 12px; font-weight: 500; color: var(--oneos-shell-muted); }
+.oneos-app-shell .oneos-shell-tabs .is-active .tabs-chrome__item-main > span { color: var(--oneos-shell-primary); font-weight: 650; }
+.oneos-app-shell :is(.oneos-shell-header,.oneos-shell-sidebar) :is(button,a,[role='menuitem']):focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: -2px; }
+@media (max-width: 1150px) {
+  .oneos-app-shell .oneos-shell-tools .ant-select { width: 148px; }
+  .oneos-app-shell .oneos-shell-search { width: 32px; justify-content: center; padding: 0; }
+  .oneos-app-shell .oneos-shell-search > span { display: none; }
+  .oneos-app-shell .oneos-shell-header { padding-inline: 8px 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .oneos-app-shell :is(.oneos-shell-header,.oneos-shell-sidebar,.oneos-shell-tabs) * { transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "python-tools",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true
+  },
+  {
+    "name": "midscene-types",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true
+  },
+  {
+    "name": "ai-test-discovery",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true
+  },
+  {
+    "name": "ai-missing-config",
+    "exitCode": 2,
+    "expectedExitCode": 2,
+    "passed": true
+  },
+  {
+    "name": "live-pinned-business",
+    "passed": true,
+    "commit": "ae0cb852f447dbecb51c313a7200ad4791bac5aa"
+  },
+  {
+    "name": "live-pinned-development",
+    "passed": true,
+    "commit": "3c5b77d5d993d2bf451196b96225636f0d271d1b"
+  }
+]

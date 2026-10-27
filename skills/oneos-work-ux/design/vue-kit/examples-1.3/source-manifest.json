@@ -1,0 +1,75 @@
+{
+  "version": "1.3",
+  "captured": "2026-09-12",
+  "source": "web-develop-latest/apps/web-antd/tools/design-lab",
+  "files": {
+    "multi-action-fixtures.ts": "a691e0e376268853fd4cb55f571c852ec7459fd8de2db056836541641eeffa50",
+    "App.vue": "3c31a555b4ed1c92ec03f7bf7ec936d9a9a7a80d6dbe2d251d7550ef514a29c2",
+    "ValidationLedger.vue": "d4c44ddad190bbe302f6226d6a7346c4c8c65232f623259afdef097d3ee710b2",
+    "fixtures.ts": "bad1c53abe5b8cff1acf40848c3c23f68c79458387df07b27fe79285e6d4b990",
+    "DetailExample.vue": "78ab5e00cec7386a88317c822239d7668e3cf446d27f9d3a692139b46e3151ab",
+    "NestedLeaseDetail.vue": "aa4f54d943838d228770d273204651c0042b323e9abf25f9bac6825b557d2305",
+    "NestedLeaseLedger.vue": "5a99c37dadfc452b401d0274b73666e00110446b141951dcae8a190829515f9b",
+    "CustomerResponsivePanels.vue": "cc146e9886324fab8b238218ad946ead92cb0e4824c9506a03e43ddbff726e99",
+    "index.html": "7805fa8798066c0359b01a5ee756af2065762d6d5e03fb881fd587a146f165cc",
+    "multi-action.css": "86266e66b88735b07682a01330ff07dde7c0406ea5df16d0af2374849f198d6b",
+    "main.ts": "eff322739665b50dc1267e6253a97e2d260b7a8827dccbacde60ff6ebba81427",
+    "CustomerResponsiveApp.vue": "b91d4b1d573a5fea15133b0f7ad917cf2d6463c18e097f76a3eaf3fa22b2b25b",
+    "NestedLeaseVehicleIdentity.vue": "c500fbd0da7db1e354baff43b0a6b476fa5131d345659e81d112edf32260461e",
+    "ComponentStates.vue": "cbab62dd05b9b0669b0647bb83b06665ce94f151d0695b09e387da56deaf8a56",
+    "nested-lease-replacements.ts": "ce9328be8e3e3e6c485d908edf30e4bbc2b85392aa461f3114009494bfe6e2ba",
+    "CustomerResponsivePage.vue": "ac9798f07a2578c0062a397600632ac5270da7fa39d4a044b49c7429adbb2b5b",
+    "lab.css": "74e739add9f9597fcc7a62a3d4249bfd24356a65b65a4b56db96f74aaa84df8e",
+    "FormExample.vue": "f2c2b427a772472e65461e8b1a925882c368cdd8661ab5a8b79dff2f8774c97e",
+    "nested-lease.css": "1d770604ab131078fe85120a7e6c2e025d70ed270712d6bdc8ded7f7d6250cf3",
+    "review-1.3.css": "d32d92d4b172f257e141510c333fa197c6326e67fbb05f562c198d3f306bde98",
+    "MultiActionLedger.vue": "060ada4aade4a4dc9644df9d3caf24ba4a6e7b44cdc3c34cfb41c5770b4d05b0",
+    "NestedLeaseVehicles.vue": "fd57deb7586005b2abf4c0c187d968fde32386e0277ee1b5d7c16c649c546873",
+    "vite.config.ts": "54e85be1650790d953a0d0df645f29b77d22e2893ee2b423c2099359ee54dbb8",
+    "LedgerExample.vue": "e5a46318ab921913d6f8fd8bf0a011d7a153694d30e80c1fc8c906348c7c0450",
+    "nested-lease-fixtures.ts": "81be9b43f35b6245c419a26f735721936f6179db8a8a10fd765fd4be4870c046",
+    "NestedLeaseHistory.vue": "639679c03d678472d164e5f9302bf5c336b23a7d55765379233ef69345cdfaa2"
+  },
+  "updates": [
+    {
+      "date": "2026-09-13",
+      "scope": "Detail descriptions, status tags, audit footer and reading/wide variants",
+      "files": [
+        "DetailExample.vue",
+        "NestedLeaseDetail.vue",
+        "review-1.3.css"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "scope": "Phase1 material recognition paired React/Vue sample; original production capture is historical, this increment is prototype-only",
+      "files": [
+        "ValidationLedger.vue"
+      ],
+      "sharedFixtures": "src/resources/design-system/material-recognition-fixtures.ts"
+    },
+    {
+      "date": "2026-09-27",
+      "scope": "Current PC 1.3 baseline: KPI 78px minimum, 10/18/12 padding, 24/30/500 mono number, 4% selection; compact and multi-action search flexes within a 320px cap. Historical capture date remains 2026-09-12.",
+      "files": [
+        "review-1.3.css",
+        "lab.css",
+        "multi-action.css"
+      ],
+      "standardVersion": "PC-1.3@2026-09-27"
+    },
+    {
+      "date": "2026-09-29",
+      "scope": "Ledger KPI cards always show a brief description and omit the top-right status dot; historical capture date remains 2026-09-12.",
+      "files": [
+        "LedgerExample.vue",
+        "MultiActionLedger.vue",
+        "lab.css",
+        "multi-action.css"
+      ],
+      "standardVersion": "PC-1.3@2026-09-27"
+    }
+  ],
+  "standardVersion": "PC-1.3@2026-09-27",
+  "hashesVerifiedAt": "2026-09-29"
+}

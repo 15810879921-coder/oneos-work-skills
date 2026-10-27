@@ -1,0 +1,5 @@
+
+> oneos-work-verification@1.0.0 test:ai
+> node scripts/check-ai-env.mjs && playwright test tests/ai.spec.ts
+
+Configure TEST environment, URL and explicit expected content. Missing keys: ONEOS_TEST_URL, ONEOS_TEST_EXPECTED_TEXT

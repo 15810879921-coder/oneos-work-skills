@@ -1,0 +1,13 @@
+test_alias_dedup_and_status_preserved (test_tools.KnowledgeTests) ... ok
+test_api_content_identity_and_encoding (test_tools.KnowledgeTests) ... ok
+test_cache_corruption_and_size_cap (test_tools.KnowledgeTests) ... ok
+test_read_exact_git_version_not_worktree (test_tools.KnowledgeTests) ... ok
+test_reject_unpinned_and_unsafe_paths (test_tools.KnowledgeTests) ... ok
+test_deployed_component_mismatch_blocks (test_tools.PacketTests) ... ok
+test_merge_must_not_deploy_and_evidence_required (test_tools.PacketTests) ... ok
+test_skipped_failed_or_stale_results_never_pass (test_tools.PacketTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.111s
+
+OK

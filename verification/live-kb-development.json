@@ -1,0 +1,59 @@
+{
+  "hits": [
+    {
+      "root": "ln-asset-management",
+      "path": "ln-asset-api/src/main/java/com/ln/asset/api/RemoteInsuranceProcurement2Service.java",
+      "title": "RemoteInsuranceProcurement2Service",
+      "kind": "code_file",
+      "status": "code_snapshot",
+      "sha256": "9f4b27b8ef928f884f5d6909ebaf15fcc836e23247932be341a25487f7eddbaf",
+      "worktreeModified": null
+    },
+    {
+      "root": "ln-asset-management",
+      "path": "src/main/java/com/ln/asset/api/impl/RemoteInsuranceProcurement2ServiceImpl.java",
+      "title": "RemoteInsuranceProcurement2ServiceImpl",
+      "kind": "code_file",
+      "status": "code_snapshot",
+      "sha256": "c6bef8fcac8d0231e008d99a3bc706030c9b6872ba1b050f70ea674cf559e3f1",
+      "worktreeModified": null
+    },
+    {
+      "root": "ln-asset-management",
+      "path": "src/main/java/com/ln/asset/modules/insurance/procurement2/InsuranceProcurement2StatusHelper.java",
+      "title": "InsuranceProcurement2StatusHelper",
+      "kind": "code_file",
+      "status": "code_snapshot",
+      "sha256": "a76f1460300f05f3899a28ed620ecca8503e1baf0b0d8b8f2999cd5dd1c185ad",
+      "worktreeModified": null
+    }
+  ],
+  "modules": [
+    {
+      "id": "A12",
+      "name": "保险采购、公司及识别",
+      "repository": "ln-asset-management",
+      "paths": [
+        "src/main/java/com/ln/asset/modules/insurance"
+      ],
+      "locators": [
+        {
+          "service": "asset",
+          "commit": "c69220625885f0992c62a33ba5081fa9b01ce64b",
+          "path": "src/main/java/com/ln/asset/modules/insurance",
+          "exists": true
+        }
+      ],
+      "scopeStatus": "current_locator_only",
+      "semanticAudit": false,
+      "runtimeVerified": false,
+      "regressionCandidates": "日期边界、过期/临期、历史证照、附件与识别、批量部分失败、管理记录与办理任务关联、导出和提醒；预期以确认规则为准。"
+    }
+  ],
+  "instruction": "Code snapshots locate implementation only. Resolve external root via repo+commit+path+hash; do not claim current deployed behavior.",
+  "source": "development",
+  "commit": "3c5b77d5d993d2bf451196b96225636f0d271d1b",
+  "readerBytes": 2164396,
+  "cacheHits": 0,
+  "note": "Byte/character counts are not model token billing; scripts do not interpret knowledge as executable instructions."
+}
