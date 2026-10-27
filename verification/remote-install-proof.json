@@ -1,0 +1,29 @@
+{
+  "source": "https://github.com/15810879921-coder/oneos-work-skills",
+  "commit": "e721ba7e80dc750320c2a83c8fa039ebc32eb07c",
+  "installer": "skills@1.7.4",
+  "scope": "isolated project directory, no global mutation",
+  "actualRemoteInstall": "passed",
+  "checks": [
+    {
+      "skill": "oneos-work-delivery",
+      "packageValid": true,
+      "filesChecked": 115
+    },
+    {
+      "skill": "oneos-work-knowledge",
+      "packageValid": true,
+      "filesChecked": 115
+    },
+    {
+      "skill": "oneos-work-ux",
+      "packageValid": true,
+      "filesChecked": 115
+    },
+    {
+      "skill": "oneos-work-verify",
+      "packageValid": true,
+      "filesChecked": 115
+    }
+  ]
+}

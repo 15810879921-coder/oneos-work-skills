@@ -6,4 +6,4 @@
 
 安装命令与详细能力见 [README](https://github.com/15810879921-coder/oneos-work-skills#install)。附件每个 ZIP 对应一个 skill，须保留完整目录；Codex 安装与 HiFox 导入是不同操作。
 
-验证：8 项 Python 边界测试、4 包完整性、Midscene 工程类型检查、1 项真实浏览器合成冒烟，以及隔离目录本地源安装测试通过。未配置真实模型/业务环境，不代表 OneOS 业务验收通过。详见 docs/验证报告.md。
+验证：8 项 Python 边界测试、4 包完整性、Midscene 工程类型检查、1 项真实浏览器合成冒烟，以及隔离目录本地源和 GitHub 远端安装测试通过。未配置真实模型/业务环境，不代表 OneOS 业务验收通过。详见 docs/验证报告.md。
