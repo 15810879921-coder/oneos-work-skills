@@ -1,0 +1,46 @@
+/* Opt-in only. No :root/body rules, global palette writes or VXE singleton mutation. */
+.oneos-surface[data-oneos-runtime='1'] { position: relative; }
+.oneos-surface[data-oneos-runtime='1'] .ant-app { color: inherit; font: inherit; }
+.oneos-surface[data-oneos-runtime='1'] ::selection { background: color-mix(in srgb, var(--oneos-primary) 22%, transparent); }
+.oneos-surface[data-oneos-runtime='1'] :is(input, textarea) { caret-color: var(--oneos-primary); }
+.oneos-surface[data-oneos-runtime='1'] :is(.ant-btn, .ant-input, .ant-input-affix-wrapper, .ant-select-selector, .ant-picker, .ant-input-number) { border-radius: var(--oneos-radius); }
+.oneos-surface[data-oneos-runtime='1'] :is(.ant-card, .ant-modal-content, .oneos-section, .lab-metrics) { border-radius: var(--oneos-radius); }
+.oneos-surface[data-oneos-runtime='1'] .ant-select-single:not(.ant-select-customize-input) .ant-select-selector { height: var(--oneos-control-height); }
+.oneos-surface[data-oneos-runtime='1'] .ant-select-single .ant-select-selection-item { line-height: calc(var(--oneos-control-height) - 2px); }
+.oneos-surface[data-oneos-runtime='1'] :is(.ant-btn:not(.ant-btn-sm):not(.ant-btn-lg), .ant-picker, .ant-input-affix-wrapper) { min-height: var(--oneos-control-height); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn.ant-btn-lg { height: 44px; min-height: 44px; }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn.ant-btn-sm { height: 32px; min-height: 32px; }
+.oneos-surface[data-oneos-runtime='1'] .ant-picker-dropdown { color: var(--oneos-ink); }
+.oneos-surface[data-oneos-runtime='1'] .vxe-table--header { color: var(--oneos-body); }
+.oneos-surface[data-oneos-runtime='1'] .vxe-header--column { height: 32px; padding-block: 0; }
+.oneos-surface[data-oneos-runtime='1'] .vxe-table--render-default { font-size: 13px; }
+.oneos-surface[data-oneos-runtime='1'] .ant-modal-root { color: var(--oneos-ink); }
+.oneos-surface[data-oneos-runtime='1'] .ant-tag:is(.ant-tag-success,.ant-tag-green) { color: var(--oneos-success); }
+.oneos-surface[data-oneos-runtime='1'] .ant-tag:is(.ant-tag-processing,.ant-tag-blue) { color: var(--oneos-info); }
+.oneos-surface[data-oneos-runtime='1'] .ant-tag.ant-tag-warning { color: var(--oneos-warning); }
+.oneos-surface[data-oneos-runtime='1'] .ant-tag.ant-tag-error { color: var(--oneos-error); }
+.oneos-surface[data-oneos-runtime='1'] .ant-form-item-explain-error { color: var(--oneos-error); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-loading { opacity: 1; }
+/* Ant 4.2.6 shares one foreground across differently derived solid fills.
+   Keep its backgrounds and states, but match the foreground to each actual fill. */
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary:not(.ant-btn-background-ghost):not(:disabled):not(.ant-btn-disabled) { color: var(--oneos-primary-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary:not(.ant-btn-background-ghost):not(:disabled):not(.ant-btn-disabled):hover { color: var(--oneos-primary-hover-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary:not(.ant-btn-background-ghost):not(:disabled):not(.ant-btn-disabled):active { color: var(--oneos-primary-active-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary.ant-btn-dangerous:not(.ant-btn-background-ghost):not(:disabled):not(.ant-btn-disabled) { color: var(--oneos-error-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary.ant-btn-dangerous:not(.ant-btn-background-ghost):not(:disabled):not(.ant-btn-disabled):hover { color: var(--oneos-error-hover-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary.ant-btn-dangerous:not(.ant-btn-background-ghost):not(:disabled):not(.ant-btn-disabled):active { color: var(--oneos-error-active-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary.ant-btn-background-ghost:not(:disabled):not(.ant-btn-disabled),
+.oneos-surface[data-oneos-runtime='1'] :is(.ant-btn-default,.ant-btn-dashed):not(:disabled):not(.ant-btn-disabled):is(:hover,:active) { color: var(--oneos-primary-ink); }
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-dangerous:not(.ant-btn-primary):not(:disabled):not(.ant-btn-disabled),
+.oneos-surface[data-oneos-runtime='1'] .ant-btn-primary.ant-btn-dangerous.ant-btn-background-ghost:not(:disabled):not(.ant-btn-disabled) { color: var(--oneos-error); }
+.oneos-surface[data-oneos-runtime='1'] .ant-steps-item-error > .ant-steps-item-container > .ant-steps-item-icon .ant-steps-icon { color: var(--oneos-error-contrast); }
+/* Default count/ribbon only. Preset or explicitly colored badges retain the
+   caller's foreground contract instead of inheriting unrelated brand/error ink. */
+.oneos-surface[data-oneos-runtime='1'] .ant-badge-count:not([class*='ant-badge-color-']):not([class*='ant-badge-status-']):not([style*='background']) { color: var(--oneos-error-contrast); }
+.oneos-surface[data-oneos-runtime='1'] a:hover .ant-badge-count:not([class*='ant-badge-color-']):not([class*='ant-badge-status-']):not([style*='background']) { color: var(--oneos-error-hover-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-ribbon:not([class*='ant-ribbon-color-']):not([style*='background']) .ant-ribbon-text { color: var(--oneos-primary-contrast); }
+.oneos-surface[data-oneos-runtime='1'] .ant-select-disabled .ant-select-selection-item { color: var(--oneos-muted); }
+.oneos-surface[data-oneos-runtime='1'] :is(.canon-main > main, .canon-sidebar) { scrollbar-color: var(--oneos-line-control) transparent; scrollbar-width: thin; }
+@media (prefers-reduced-motion: reduce) {
+  .oneos-surface[data-oneos-runtime='1'] *, .oneos-surface[data-oneos-runtime='1'] *::before, .oneos-surface[data-oneos-runtime='1'] *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

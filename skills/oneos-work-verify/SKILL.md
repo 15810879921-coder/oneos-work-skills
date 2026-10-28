@@ -5,9 +5,11 @@ description: Use when 用户要求对已部署的 OneOS 测试环境做验收、
 
 # OneOS 独立验证
 
-独立工作体系 v1.0.0；不依赖团队 FDE。
+独立工作体系 v1.1.1；不依赖团队 FDE。
 
 先读 [共用协议](references/contract.md) 和 [验证方法](references/testing.md)。首次接入读 [环境说明](references/setup.md)；核实际组件部署版本后再执行适用测试。规则来源按 [双库方法](references/knowledge.md)，页面标准按 [体验规范](references/design.md)。
+
+Java 后端验收按验证方法加载同版 [开发规则](references/java-backend-rules.md) 和适用子规则；Skill 自身回归不能冒充业务验收。
 
 需要 UI 自动化时读 [Midscene 接入](references/midscene.md)，复制本包 assets/midscene 模板到项目测试目录，不在技能安装目录堆依赖或证据。实际业务验收必须有真实数据和明确预期；本地合成冒烟只证明测试工程能运行。
 

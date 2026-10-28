@@ -1,0 +1,70 @@
+[
+  {
+    "skill": "oneos-work-delivery",
+    "matchesReviewedLocalPackage": true,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-delivery@1.1.1",
+      "sharedDigest": "b84885342d2ab0d5e094b76b7f729b2bcfed91a91e780a155d3764225df5b9d2",
+      "filesChecked": 119,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    },
+    "releaseArchive": "oneos-work-delivery.zip",
+    "releaseSha256": "c0dfe43da8cbdec2bd4b5d09d45d30bd2a204b50e944e918b714130afa85aee1"
+  },
+  {
+    "skill": "oneos-work-verify",
+    "matchesReviewedLocalPackage": true,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-verify@1.1.1",
+      "sharedDigest": "b84885342d2ab0d5e094b76b7f729b2bcfed91a91e780a155d3764225df5b9d2",
+      "filesChecked": 119,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    },
+    "releaseArchive": "oneos-work-verify.zip",
+    "releaseSha256": "9b007e6e1088321fe281a92df0fb8f5da95a683afc9618b6e6b2ff9902b1a96a"
+  },
+  {
+    "skill": "oneos-work-knowledge",
+    "matchesReviewedLocalPackage": true,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-knowledge@1.1.1",
+      "sharedDigest": "b84885342d2ab0d5e094b76b7f729b2bcfed91a91e780a155d3764225df5b9d2",
+      "filesChecked": 119,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    },
+    "releaseArchive": "oneos-work-knowledge.zip",
+    "releaseSha256": "73f00f7852086781816015f5d6f0353bd712a1d949dde1a0797abb2d1510a18b"
+  },
+  {
+    "skill": "oneos-work-ux",
+    "matchesReviewedLocalPackage": true,
+    "doctor": {
+      "packageValid": true,
+      "packageId": "oneos-work-ux@1.1.1",
+      "sharedDigest": "b84885342d2ab0d5e094b76b7f729b2bcfed91a91e780a155d3764225df5b9d2",
+      "filesChecked": 119,
+      "errors": [],
+      "projectConfigured": false,
+      "knowledgeAccessVerified": false,
+      "modelVerified": false,
+      "notice": "Package integrity only. It does not prove remote permissions, test environment, model connectivity, or business acceptance."
+    },
+    "releaseArchive": "oneos-work-ux.zip",
+    "releaseSha256": "0b8b775b8d3c38d32cb5141fcfe86f88109dac9276a4db3ff3f225a764019e87"
+  }
+]

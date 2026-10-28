@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "oneos-work/link-v1",
+  "id": null,
+  "business": {
+    "ruleId": null,
+    "repository": null,
+    "commit": null,
+    "path": null,
+    "sha256": null,
+    "sourceStatus": null,
+    "scope": []
+  },
+  "development": {
+    "moduleId": null,
+    "repository": null,
+    "commit": null,
+    "path": null,
+    "sha256": null
+  },
+  "relationStatus": "candidate_locator_only",
+  "decisionSource": null,
+  "tests": [],
+  "verification": {
+    "runtimeVerified": false,
+    "environment": null,
+    "deploymentId": null,
+    "evidenceRefs": []
+  },
+  "supersedes": null
+}

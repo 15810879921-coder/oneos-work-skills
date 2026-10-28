@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "oneos-work/project-v1",
+  "projectId": null,
+  "taskPlatform": null,
+  "repositories": [],
+  "testBranch": null,
+  "mergeTriggersDeployment": null,
+  "testEnvironment": null,
+  "componentVersionReaders": {},
+  "accountRoleRefs": [],
+  "testDataPolicy": null,
+  "designSource": {
+    "mode": "bundled_snapshot",
+    "packageId": "oneos-design-system-20261027-current"
+  },
+  "knowledge": {
+    "business": "git@codeup.aliyun.com:697c54a19df7fdfa65466405/oneos-business-knowledge.git",
+    "development": "git@codeup.aliyun.com:697c54a19df7fdfa65466405/oneos-development-knowledge.git"
+  },
+  "credentialPolicy": "Reference only; no secrets in this file"
+}

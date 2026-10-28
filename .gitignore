@@ -8,3 +8,4 @@ test-results/
 playwright-report/
 midscene_run/
 .DS_Store
+dist/

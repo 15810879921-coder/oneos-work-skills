@@ -5,7 +5,7 @@ description: Use when 用户需要联合检索 OneOS 业务库和开发库、关
 
 # OneOS 双库知识
 
-独立工作体系 v1.0.0；不依赖团队 FDE。
+独立工作体系 v1.1.1；不依赖团队 FDE。
 
 先读 [共用协议](references/contract.md) 与 [双库方法](references/knowledge.md)，首次接入读 [工具配置](references/setup.md)。默认先检索现有云端知识，不为咨询新建知识仓库。
 

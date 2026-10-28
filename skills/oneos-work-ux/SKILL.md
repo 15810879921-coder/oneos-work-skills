@@ -5,7 +5,7 @@ description: Use when 用户要求制定或评审 OneOS 页面设计、组件与
 
 # OneOS 体验规范
 
-独立工作体系 v1.0.0；不依赖团队 FDE。
+独立工作体系 v1.1.1；不依赖团队 FDE。
 
 先读 [共用协议](references/contract.md) 与 [体验规范职责](references/design.md)，随后按 [规范阅读索引](design/INDEX.md) 只读适用正文/范例。本入口保留独立标准维护权，交付与验证也使用同一份标准。
 
